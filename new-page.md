@@ -2,7 +2,7 @@
 title: git test
 description: 
 published: true
-date: 2020-08-09T06:08:07.549Z
+date: 2020-08-09T06:16:21.581Z
 tags: 
 editor: markdown
 ---
@@ -12,4 +12,3 @@ editor: markdown
 $ newgrp wiki
 $ pm2 start wiki
 ```
-Testing
