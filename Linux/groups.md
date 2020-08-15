@@ -2,7 +2,7 @@
 title: Linux groups
 description: 
 published: true
-date: 2020-08-09T06:54:00.012Z
+date: 2020-08-15T15:56:59.801Z
 tags: linux
 editor: markdown
 ---
@@ -43,6 +43,8 @@ Change a folder's group permission:
 ```
 chown myuser:mygroup myfolder
 ```
+
+### Using `setgid`
 
 Set a folder's `gid`, so that all files and subfolders created within that folder will inherit that group:
 ```
