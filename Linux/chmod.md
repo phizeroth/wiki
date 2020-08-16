@@ -2,7 +2,7 @@
 title: chmod
 description: 
 published: true
-date: 2020-08-16T16:47:09.307Z
+date: 2020-08-16T17:19:59.469Z
 tags: linux
 editor: markdown
 ---
@@ -21,7 +21,7 @@ This 10-character code is made up of four parts:
 **Group permission** | Applies to the file's assigned [group](/Linux/groups).
 **Other permission** | Applies to all other users. Sometimes referred to as "world" permission.
 
-<img src="/assets/classes.png.webp" style="filter: invert(.8)" />
+<img src="/assets/classes.png.webp" style="filter: invert(.8); padding: 32px" />
 
 An `s` in the group permission class of a directory indicates that new files in that folder will explicitly inherit its group permissions. See [using setgid](/Linux/groups#using-setgid).
 
@@ -69,21 +69,32 @@ Numeric mode works with the octal value as described above, and modifies an enti
 
 ### symbolic mode
 With symbolic mode, you can modify individual parts of the permission set using symbolic representation.
+`all` is implied if no other permission class is specified, therefore can be omitted.
 
-<img src="/assets/chmod.png" style="filter: invert(.8)" />
+<img src="/assets/chmod.png" style="filter: invert(.9); padding: 32px 0 16px 16px" />
 
-
-
+Examples:
 ||command|result|
 |-|-|-|
 add execute permission for all|`chmod +x file.txt`|<pre>-r-xr-xr-x file.txt</pre>
 add write permission for user owner|`chmod u+w file.txt`|<pre>-rw-r--r-- file.txt</pre>
 remove read permission for other users|`chmod o-r file.txt`|<pre>-r--r----- file.txt</pre>
 add write/execute to user and group owners|`chmod ug+wx file.txt`|<pre>-rwxrwxr-- file.txt</pre>
-add 
+add write to user and group, remove read from other|`chmod ug+w,o-r file.txt`|<pre>-rw-rw---- file.txt</pre>
+set write-only to group and other|`chmod go=w file.txt`|<pre>-r---w--w- file.txt</pre>
 
+### directories
+Modifying directory permissions works much in the same way as files.
 <pre>
-<code>chmod +x file.txt</code>  ==>  -r-xr-xr-x file.txt
-<code>chmod u+w file.txt</code> ==>  -rw-r--r-- file.txt
+  dr--r--r-- directory
 </pre>
+|command|result|
+|-|-|
+`chmod 754 directory`|<pre>drwxr-xr-- directory</pre>
+`chmod u+w,ug+x directory`|<pre>drwxr-xr-- directory</pre>
 
+To change permissions of all files and subfolders within a directory, use the `-R` recursive flag:
+`chmod -R u+wx directory`
+
+## References
+[An Introduction to Linux File Permissions - Boolean World](https://www.booleanworld.com/introduction-linux-file-permissions/)
