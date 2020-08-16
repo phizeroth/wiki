@@ -2,12 +2,10 @@
 title: file permissions
 description: Explanation of basic file and directory permissions in Linux, as well as chmod usage
 published: true
-date: 2020-08-16T17:28:41.387Z
+date: 2020-08-16T17:29:24.775Z
 tags: linux
 editor: markdown
 ---
-
-## File permission explanation
 
 When listing a directory with `ls -l`, the file mode of each file and directory is shown in a symbolic format such as `-rwxr-xr--`.
 
