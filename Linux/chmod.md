@@ -2,7 +2,7 @@
 title: file permissions
 description: Explanation of basic file and directory permissions in Linux, as well as chmod usage
 published: true
-date: 2020-08-16T18:12:25.741Z
+date: 2020-08-16T18:13:27.687Z
 tags: linux
 editor: markdown
 ---
@@ -21,7 +21,7 @@ This 10-character code is made up of four parts:
 
 An `s` in the group permission class of a directory indicates that new files in that folder will explicitly inherit its group permissions. See [using setgid](/Linux/groups#using-setgid). File permissions in Linux are technically stored in 4 sets, but the special modes set will not be covered in this page.
 
-## Permissions formats
+# Permissions formats
 Each of the 3 permission classes is stored in 3 bits. Permission values can be represented in octal (numeric), binary, or symbolic format. 
 
 For example, a file which is read/write/execute for the user owner, read/execute for itd group, and read-only all other users, can be represented the following ways:
@@ -34,8 +34,8 @@ For example, a file which is read/write/execute for the user owner, read/execute
 </pre>
 <br>
 
-### Permissions guides {.tabset}
-#### Permissions table
+## Permissions guides {.tabset}
+### Permissions table
 
 Below is a list of all possible permission set values in each format:
 <br>
@@ -51,7 +51,7 @@ Below is a list of all possible permission set values in each format:
   7   111   r w x   full control
 </pre>
 
-#### Binary-octal conversion
+### Binary-octal conversion
 ![binary_counter_3digits.gif](/assets/binary_counter_3digits.gif)
 
 If you can't count in binary, here's an easy trick for converting binary to numeric. Multiply each bit by its numeric place value (4-2-1), then sum the resulting numbers. For example:
@@ -64,21 +64,21 @@ If you can't count in binary, here's an easy trick for converting binary to nume
   = 7        = 5        = 4
 </pre>
 
-## chmod usage
+# chmod usage
 `chmod` is the Linux command used to change file and directory permissions. It can be used either with numeric or symbolic mode.  For the examples below, we will imagine starting with the following read-only file (numeric permission value = 444):
 <br>
 <pre>
   -r--r--r-- file.txt
 </pre>
 
-### numeric mode
+## numeric mode
 Numeric mode works with the octal value as described above, and modifies an entire permission set:
 ||command|result|
 -|-|-
 Set to full control for user, read/execute for group, and read-only for other|`chmod 754 file.txt`|<pre>-rwxr-xr-- file.txt</pre>
 Set to read-only for user and group, and no access for other|`chmod 440 file.txt`|<pre>-r--r----- file.txt</pre>
 
-### symbolic mode
+## symbolic mode
 With symbolic mode, you can modify individual parts of the permission set using symbolic representation.
 `all` is implied if no other permission class is specified, therefore can be omitted.
 
@@ -94,7 +94,7 @@ add write/execute to user and group owners          |`chmod ug+wx file.txt`    |
 add write to user and group, remove read from other |`chmod ug+w,o-r file.txt` |<pre>-rw-rw---- file.txt</pre>
 set write-only to group and other                   |`chmod go=w file.txt`     |<pre>-r---w--w- file.txt</pre>
 
-### directory usage
+## directory usage
 Modifying directory permissions works much in the same way as files.
 <pre>
   dr--r--r-- directory
@@ -107,12 +107,12 @@ Modifying directory permissions works much in the same way as files.
 To change permissions of all files and subfolders within a directory, use the `-R` recursive flag:
 `chmod -R u+wx directory`
 
-### verbose flag
+## verbose flag
 The `-v` flag can be used to explicitly print out the resulting changes from a chmod command.
 ```shell-session
 $ chmod -v ug+wx file.txt
 mode of 'file.txt' changed from 0444 (r--r--r--) to 0774 (rwxrwxr--)
 ```
 
-## References
+# References
 [An Introduction to Linux File Permissions - Boolean World](https://www.booleanworld.com/introduction-linux-file-permissions/)
