@@ -1,8 +1,8 @@
 ---
-title: Linux groups
+title: groups
 description: 
 published: true
-date: 2020-08-15T15:56:59.801Z
+date: 2020-08-16T17:28:12.009Z
 tags: linux
 editor: markdown
 ---
