@@ -2,12 +2,10 @@
 title: file permissions
 description: Explanation of basic file and directory permissions in Linux, as well as chmod usage
 published: true
-date: 2020-08-16T17:27:11.135Z
+date: 2020-08-16T17:28:41.387Z
 tags: linux
 editor: markdown
 ---
-
-`chmod` is a Linux shell command that allows you to modify the permissions of a file or directory.
 
 ## File permission explanation
 
