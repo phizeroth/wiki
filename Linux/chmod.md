@@ -2,7 +2,7 @@
 title: chmod
 description: 
 published: true
-date: 2020-08-15T19:19:01.455Z
+date: 2020-08-16T16:47:09.307Z
 tags: linux
 editor: markdown
 ---
@@ -27,7 +27,7 @@ An `s` in the group permission class of a directory indicates that new files in 
 
 ### Permissions guides {.tabset}
 #### Permissions table
-Each permission class value can be represented in octal (numeric), binary, or symbolic format:
+Each of the nine total permissions is stored as a single bit. A permission class is 3 bits. Permission values can be represented in octal (numeric), binary, or symbolic format:
 <br>
 <pre style="font-size: 1.25em; background-color: #181818; width: 50%">
 <span style="color: #5a9"> oct  bin    sym    description</span>
@@ -41,8 +41,11 @@ Each permission class value can be represented in octal (numeric), binary, or sy
   7   111   r w x   full control
 </pre>
 
-#### Octal conversion
-<pre>
+#### Binary-octal conversion
+![binary_counter_3digits.gif](/assets/binary_counter_3digits.gif)
+
+If you can't count in binary, here's an easy trick for converting binary to numeric. Multiply each bit by its numeric place value (4-2-1), then sum the resulting numbers. For example:
+<pre style="font-size: 1.25em; background-color: #181818; width: 50%">
 <span style="color: #777"> r w x      r - x      r - -</span>
  1 1 1      1 0 1      1 0 0
  4 2 1      4 2 1      4 2 1
@@ -66,6 +69,10 @@ Numeric mode works with the octal value as described above, and modifies an enti
 
 ### symbolic mode
 With symbolic mode, you can modify individual parts of the permission set using symbolic representation.
+
+<img src="/assets/chmod.png" style="filter: invert(.8)" />
+
+
 
 ||command|result|
 |-|-|-|
