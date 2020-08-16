@@ -2,7 +2,7 @@
 title: file permissions
 description: Explanation of basic file and directory permissions in Linux, as well as chmod usage
 published: true
-date: 2020-08-16T18:10:43.738Z
+date: 2020-08-16T18:12:25.741Z
 tags: linux
 editor: markdown
 ---
@@ -37,6 +37,7 @@ For example, a file which is read/write/execute for the user owner, read/execute
 ### Permissions guides {.tabset}
 #### Permissions table
 
+Below is a list of all possible permission set values in each format:
 <br>
 <pre style="font-size: 1.25em; background-color: #181818; width: 50%">
 <span style="color: #5a9"> oct  bin    sym    description</span>
