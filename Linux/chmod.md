@@ -2,7 +2,7 @@
 title: file permissions
 description: Explanation of basic file and directory permissions in Linux, as well as chmod usage
 published: true
-date: 2020-08-16T18:13:27.687Z
+date: 2020-08-16T18:14:50.481Z
 tags: linux
 editor: markdown
 ---
@@ -95,7 +95,8 @@ add write to user and group, remove read from other |`chmod ug+w,o-r file.txt` |
 set write-only to group and other                   |`chmod go=w file.txt`     |<pre>-r---w--w- file.txt</pre>
 
 ## directory usage
-Modifying directory permissions works much in the same way as files.
+Modifying directory permissions works much in the same way as files. Below are a couple examples given the following directory:
+<br>
 <pre>
   dr--r--r-- directory
 </pre>
