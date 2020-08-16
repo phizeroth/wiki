@@ -2,7 +2,7 @@
 title: file permissions
 description: Explanation of basic file and directory permissions in Linux, as well as chmod usage
 published: true
-date: 2020-08-16T17:47:34.109Z
+date: 2020-08-16T17:48:13.650Z
 tags: linux
 editor: markdown
 ---
@@ -21,7 +21,7 @@ This 10-character code is made up of four parts:
 
 An `s` in the group permission class of a directory indicates that new files in that folder will explicitly inherit its group permissions. See [using setgid](/Linux/groups#using-setgid). File permissions in Linux are technically stored in 4 sets, but the fourth set will not be covered in this page.
 
-### Permissions guides
+## Permissions guides
 ### Permissions guides {.tabset}
 #### Permissions table
 Each of the nine total permissions is stored as a single bit. A permission class is 3 bits. Permission values can be represented in octal (numeric), binary, or symbolic format:
