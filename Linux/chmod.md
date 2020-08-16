@@ -1,8 +1,8 @@
 ---
-title: chmod
-description: 
+title: file permissions
+description: Explanation of basic file and directory permissions in Linux, as well as chmod usage
 published: true
-date: 2020-08-16T17:19:59.469Z
+date: 2020-08-16T17:27:11.135Z
 tags: linux
 editor: markdown
 ---
@@ -55,7 +55,7 @@ If you can't count in binary, here's an easy trick for converting binary to nume
 </pre>
 
 ## chmod usage
-`chmod` can be used either with numeric or symbolic mode.  For the examples below, we will imagine starting with the following read-only file:
+`chmod` is the Linux command used to change file and directory permissions. It can be used either with numeric or symbolic mode.  For the examples below, we will imagine starting with the following read-only file (numeric permission value = 444):
 <br>
 <pre>
   -r--r--r-- file.txt
@@ -64,8 +64,9 @@ If you can't count in binary, here's an easy trick for converting binary to nume
 ### numeric mode
 Numeric mode works with the octal value as described above, and modifies an entire permission set:
 ||command|result|
-|-|-|-|
-|Change to full control for user, read/execute for group, and read-only for other|`chmod 754 file.txt`|<pre>-rwxr-xr-- file.txt</pre>|
+-|-|-
+Set to full control for user, read/execute for group, and read-only for other|`chmod 754 file.txt`|<pre>-rwxr-xr-- file.txt</pre>
+Set to read-only for user and group, and no access for other|`chmod 440 file.txt`|<pre>-r--r----- file.txt</pre>
 
 ### symbolic mode
 With symbolic mode, you can modify individual parts of the permission set using symbolic representation.
