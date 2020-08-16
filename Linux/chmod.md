@@ -2,7 +2,7 @@
 title: file permissions
 description: Explanation of basic file and directory permissions in Linux, as well as chmod usage
 published: true
-date: 2020-08-16T17:48:13.650Z
+date: 2020-08-16T18:10:43.738Z
 tags: linux
 editor: markdown
 ---
@@ -19,12 +19,24 @@ This 10-character code is made up of four parts:
 
 <img src="/assets/classes.png.webp" style="filter: invert(.8); padding: 32px" />
 
-An `s` in the group permission class of a directory indicates that new files in that folder will explicitly inherit its group permissions. See [using setgid](/Linux/groups#using-setgid). File permissions in Linux are technically stored in 4 sets, but the fourth set will not be covered in this page.
+An `s` in the group permission class of a directory indicates that new files in that folder will explicitly inherit its group permissions. See [using setgid](/Linux/groups#using-setgid). File permissions in Linux are technically stored in 4 sets, but the special modes set will not be covered in this page.
 
-## Permissions guides
+## Permissions formats
+Each of the 3 permission classes is stored in 3 bits. Permission values can be represented in octal (numeric), binary, or symbolic format. 
+
+For example, a file which is read/write/execute for the user owner, read/execute for itd group, and read-only all other users, can be represented the following ways:
+
+<br>
+<pre style="background-color: #181818; width: 35%">
+  symbolic   - rwx r-x r--
+  binary       111 101 100
+  numeric       7   5   4
+</pre>
+<br>
+
 ### Permissions guides {.tabset}
 #### Permissions table
-Each of the nine total permissions is stored as a single bit. A permission class is 3 bits. Permission values can be represented in octal (numeric), binary, or symbolic format:
+
 <br>
 <pre style="font-size: 1.25em; background-color: #181818; width: 50%">
 <span style="color: #5a9"> oct  bin    sym    description</span>
@@ -72,23 +84,23 @@ With symbolic mode, you can modify individual parts of the permission set using 
 <img src="/assets/chmod.png" style="filter: invert(.9); padding: 32px 0 16px 16px" />
 
 Examples:
-||command|result|
+|                                                   | command                  | result
 |-|-|-|
-add execute permission for all|`chmod +x file.txt`|<pre>-r-xr-xr-x file.txt</pre>
-add write permission for user owner|`chmod u+w file.txt`|<pre>-rw-r--r-- file.txt</pre>
-remove read permission for other users|`chmod o-r file.txt`|<pre>-r--r----- file.txt</pre>
-add write/execute to user and group owners|`chmod ug+wx file.txt`|<pre>-rwxrwxr-- file.txt</pre>
-add write to user and group, remove read from other|`chmod ug+w,o-r file.txt`|<pre>-rw-rw---- file.txt</pre>
-set write-only to group and other|`chmod go=w file.txt`|<pre>-r---w--w- file.txt</pre>
+add execute permission for all                      |`chmod +x file.txt`       |<pre>-r-xr-xr-x file.txt</pre>
+add write permission for user owner                 |`chmod u+w file.txt`      |<pre>-rw-r--r-- file.txt</pre>
+remove read permission for other users              |`chmod o-r file.txt`      |<pre>-r--r----- file.txt</pre>
+add write/execute to user and group owners          |`chmod ug+wx file.txt`    |<pre>-rwxrwxr-- file.txt</pre>
+add write to user and group, remove read from other |`chmod ug+w,o-r file.txt` |<pre>-rw-rw---- file.txt</pre>
+set write-only to group and other                   |`chmod go=w file.txt`     |<pre>-r---w--w- file.txt</pre>
 
-### directories
+### directory usage
 Modifying directory permissions works much in the same way as files.
 <pre>
   dr--r--r-- directory
 </pre>
-|command|result|
+| command                 | result
 |-|-|
-`chmod 754 directory`|<pre>drwxr-xr-- directory</pre>
+`chmod 754 directory`     |<pre>drwxr-xr-- directory</pre>
 `chmod u+w,ug+x directory`|<pre>drwxr-xr-- directory</pre>
 
 To change permissions of all files and subfolders within a directory, use the `-R` recursive flag:
