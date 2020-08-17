@@ -2,7 +2,7 @@
 title: file permissions
 description: Explanation of basic file and directory permissions in Linux, as well as chmod usage
 published: true
-date: 2020-08-16T18:14:50.481Z
+date: 2020-08-17T02:04:51.269Z
 tags: linux
 editor: markdown
 ---
@@ -79,7 +79,8 @@ Set to full control for user, read/execute for group, and read-only for other|`c
 Set to read-only for user and group, and no access for other|`chmod 440 file.txt`|<pre>-r--r----- file.txt</pre>
 
 ## symbolic mode
-With symbolic mode, you can modify individual parts of the permission set using symbolic representation.
+With symbolic mode, you can modify individual parts of the permission set by adding, removing, or replacing any combination of permissions.
+
 `all` is implied if no other permission class is specified, therefore can be omitted.
 
 <img src="/assets/chmod.png" style="filter: invert(.9); padding: 32px 0 16px 16px" />
