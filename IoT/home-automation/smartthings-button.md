@@ -2,9 +2,9 @@
 title: SmartThings Button
 description: Small, multi-function Zigbee switch
 published: true
-date: 2020-08-08T21:30:36.909Z
-tags: 
-editor: undefined
+date: 2020-08-18T05:04:02.986Z
+tags: iot, hass, smartthings, zigbee
+editor: markdown
 ---
 
 ![smartbutton_01_0000400.png](/smartbutton_01_0000400.png =250x){.align-abstopright}
@@ -74,4 +74,6 @@ double press | 1004
 
 ## References
 [Manual (pdf)](https://support.smartthings.com/hc/en-us/article_attachments/360002610923/IOT_US_Button_QSG.pdf)
+[Samsung SmartThings Button](https://www.samsung.com/us/smart-home/smartthings/buttons/samsung-smartthings-button-gp-u999sjvleaa/)
+[Buy on Amazon](https://www.amazon.com/gp/product/B07F8ZFFQK)
 
