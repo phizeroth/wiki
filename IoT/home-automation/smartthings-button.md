@@ -2,7 +2,7 @@
 title: SmartThings Button
 description: Small, multi-function Zigbee switch
 published: true
-date: 2020-08-18T05:04:02.986Z
+date: 2020-08-18T18:21:19.686Z
 tags: iot, hass, smartthings, zigbee
 editor: markdown
 ---
@@ -13,6 +13,7 @@ editor: markdown
 
 - **Protocol**
   - [Zigbee](https://en.wikipedia.org/wiki/Zigbee)
+    - Reduced-function device (RFD), does not extend mesh
 
 - **Power**
   - Battery (CR2450 3V)
