@@ -2,7 +2,7 @@
 title: Smart home devices
 description: 
 published: true
-date: 2020-08-18T05:00:44.240Z
+date: 2020-08-20T03:02:59.471Z
 tags: iot
 editor: markdown
 ---
@@ -10,7 +10,8 @@ editor: markdown
 ## E26 Standard
 1. [EcoSmart Smart Bulb](https://www.homedepot.com/p/EcoSmart-60-Watt-Equivalent-A19-Dimmable-SMART-LED-Light-Bulb-Tunable-White-2-Pack-A9A19A60WESDZ02/309683612) $5 - Bright tunable white Zigbee bulb, best bang for buck for basic bulbs. $10 for a 2-pack at Home Depot.
 1. [Kasa Multicolor](https://www.kasasmart.com/us/products/smart-lighting/kasa-smart-light-bulb-multicolor-kl130) $24 - Good brightness for color WiFi bulb
-1. [Sengled Color](https://us.sengled.com/products/sengled-smart-led-multicolor-a19-bulb) $20 - Only color Zigbee bulb I've tried, not impressed by brightness
+1. [innr Color](https://www.amazon.com/dp/B08428JSDZ) $24 - Slightly better brighness than Sengled, especially in color mode. Colorloop effect works.
+1. [Sengled Color](https://us.sengled.com/products/sengled-smart-led-multicolor-a19-bulb) $20 - Not impressed by brightness. Colorloop effect does not work.
 1. [Wyze Bulb](https://wyze.com/wyze-bulb.html) $10 - Decent tunable white WiFi bulb.
 
 ## E12 Candelabra
