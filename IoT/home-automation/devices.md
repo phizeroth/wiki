@@ -2,13 +2,10 @@
 title: Smart home devices
 description: 
 published: true
-date: 2020-08-20T05:03:08.262Z
+date: 2020-08-20T05:06:24.749Z
 tags: iot
 editor: markdown
 ---
-
-*[FFD]: Full-feature device (extends mesh)
-*[RFD]: Reduced-feature device (does not extend mesh)
 
 ## E26 Standard
 1. [EcoSmart Smart Bulb](https://www.homedepot.com/p/EcoSmart-60-Watt-Equivalent-A19-Dimmable-SMART-LED-Light-Bulb-Tunable-White-2-Pack-A9A19A60WESDZ02/309683612) $5 - Zigbee FFD - Bright tunable white bulb, best bang for buck for basic bulbs. $10 for a 2-pack at Home Depot.
@@ -29,3 +26,7 @@ editor: markdown
 
 ## Zigbee Gateway
 - [Phoscon Raspbee II](https://www.amazon.com/gp/product/B084MK8F5M) $38 - For Raspberry Pi
+
+<!--definitions-->
+*[FFD]: Full-feature device (extends mesh)
+*[RFD]: Reduced-feature device (does not extend mesh)
