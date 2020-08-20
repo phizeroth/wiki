@@ -2,7 +2,7 @@
 title: Smart home devices
 description: 
 published: true
-date: 2020-08-20T03:02:59.471Z
+date: 2020-08-20T03:03:27.272Z
 tags: iot
 editor: markdown
 ---
@@ -15,7 +15,7 @@ editor: markdown
 1. [Wyze Bulb](https://wyze.com/wyze-bulb.html) $10 - Decent tunable white WiFi bulb.
 
 ## E12 Candelabra
-1. [Sengled Color Candelabra](https://us.sengled.com/products/sengled-smart-led-multicolor-candle-bulb) $21 - Zigbee, only candelabra bulb I've tried; not very bright.
+1. [Sengled Color Candelabra](https://us.sengled.com/products/sengled-smart-led-multicolor-candle-bulb) $21 - Zigbee, only candelabra bulb I've tried; not very bright. Colorloop effect does not work.
 
 ## Plug
 1. [Innr Smart Plug SP224](https://www.amazon.com/gp/product/B07SQGG8Z7) $17 - Zigbee
