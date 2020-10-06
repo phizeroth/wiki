@@ -2,7 +2,7 @@
 title: disk cleanup
 description: easy ways to tidy up some free disk space
 published: true
-date: 2020-10-06T17:18:29.877Z
+date: 2020-10-06T17:19:54.541Z
 tags: linux
 editor: markdown
 ---
@@ -40,4 +40,4 @@ sudo journalctl --vacuum-time=3d
 ```
 
 ### References
-* https://itsfoss.com/free-up-space-ubuntu-linux/
+- https://itsfoss.com/free-up-space-ubuntu-linux/
