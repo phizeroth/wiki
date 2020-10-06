@@ -2,9 +2,9 @@
 title: Wiki.js Installation
 description: Wiki.js installation on a Linux/Nginx server
 published: true
-date: 2020-08-08T21:30:39.796Z
-tags: 
-editor: undefined
+date: 2020-10-06T17:05:46.998Z
+tags: linux, server, wiki.js
+editor: markdown
 ---
 
 This is a basic Node server install on Linux / Nginx on port 3000. For a Docker install, go to https://docs.requarks.io/install/docker. Thanks to my overall inexperience I could **not** for the life of me get Nginx to serve both the Docker *and* the rest of the static website.
@@ -107,11 +107,12 @@ $ sudo certbot --nginx -d wiki.phiz.io
 
 ## Start the Wiki.js server
 
-The server can be started simply with `node server`. It's a good idea to use this first to test for any errors. If EACCES errors are encountered, use sudo.
+The server can be started simply with `node server` from `/var/www/phiz.io`. It's a good idea to use this first to test for any errors. If EACCES errors are encountered, use sudo.
 
 For long-term deployment it should be run as a service or with a process manager such as `pm2`:
 ```shell-session
 $ pm2 start server --name wiki
+$ pm2 startup  # creates a startup script to auto-start server on system boot
 ```
 
 Wiki.js should now be accessible at https://wiki.phiz.io!
