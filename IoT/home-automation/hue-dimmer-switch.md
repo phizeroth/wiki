@@ -2,7 +2,7 @@
 title: Philips Hue dimmer switch
 description: 
 published: true
-date: 2021-06-13T15:49:46.103Z
+date: 2021-06-14T04:34:11.801Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-13T15:49:46.103Z
@@ -60,11 +60,11 @@ event_data:
 
 ### Available events
 
-action | ON | BRIGHT | DIM | OFF
+action | ON | DIM UP | DIM DN | OFF
 :-|-:
 single press   | 1000 | 2000 | 3000 | 4000
 single release | 1002 | 2002 | 3002 | 4002
-long press | 1001 | 2002 | 3002 | 4002
+long press | 1001 | 2001 | 3001 | 4001
 long release | 1003 | 2003 | 3003 | 4003
 
 ## References
