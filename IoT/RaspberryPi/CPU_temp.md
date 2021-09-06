@@ -1,14 +1,13 @@
 ---
-title: CPU temp
+title: CPU temperature
 description: 
 published: true
-date: 2021-09-06T19:07:52.962Z
+date: 2021-09-06T19:08:43.137Z
 tags: rpi
 editor: markdown
 dateCreated: 2021-09-06T19:07:52.962Z
 ---
 
-# CPU temperature
 ### vcgencmd
 The built-in utility `vcgencmd` can be used to read the CPU temperature on the Raspberry Pi.
 
