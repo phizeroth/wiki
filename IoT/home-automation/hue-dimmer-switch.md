@@ -2,7 +2,7 @@
 title: Philips Hue dimmer switch
 description: 
 published: true
-date: 2021-09-15T22:22:51.250Z
+date: 2021-09-15T22:23:42.974Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-13T15:49:46.103Z
@@ -80,7 +80,8 @@ on   | press
 up   | short_release
 down | long_release
 off  | double_press
-      | hold
+     | triple_press
+     | hold      
 
 A `command` will be referenced in the format `[button]_[press_type]`, e.g. `on_press`, `down_short_release`.
 
