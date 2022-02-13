@@ -1,8 +1,8 @@
 ---
-title: Software Setup
+title: New Device Setup
 description: 
 published: true
-date: 2022-02-13T20:56:33.443Z
+date: 2022-02-13T20:57:17.817Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
