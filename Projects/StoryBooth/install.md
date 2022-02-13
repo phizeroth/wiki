@@ -2,7 +2,7 @@
 title: Software Setup
 description: 
 published: true
-date: 2022-02-13T18:59:42.366Z
+date: 2022-02-13T19:24:09.560Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -28,6 +28,9 @@ sudo raspi-config
 - Select Performance Options
 - Select GPU Memory
 - Change to 256
+
+### Update hostname
+Go to Raspberry Pi Configuration from Preferences menu, update hostname to `storybooth_#`, replacing `#` with the device number.
 
 ## Google OAuth
 
@@ -64,3 +67,13 @@ sudo systemctl daemon-reload
 sudo systemctl enable storybooth.service
 sudo reboot
 ```
+
+## Remote configuration
+- Download and install TeamViewer:
+https://www.teamviewer.com/en-us/download/raspberry-pi
+- Open TeamViewer from the system tray and log in to account.
+
+## Other
+- Set `/home/pi/storybooth/desktop.png` to background image
+- Right-click Trash icon on desktop and "Remove from desktop"
+- Right-click panel, select Panel Settings, Advanced tab, check "Minimize panel when not in use"
