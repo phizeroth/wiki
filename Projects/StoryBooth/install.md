@@ -2,7 +2,7 @@
 title: Software Setup
 description: 
 published: true
-date: 2022-02-13T19:34:43.123Z
+date: 2022-02-13T19:52:21.881Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -40,7 +40,7 @@ pip3 install pydrive
 ```
 
 ### Get OAuth credentials
-#### API client key
+#### API client ID
 Go to [Google Cloud Platform | APIs and Services | Credentials](https://console.developers.google.com/apis/credentials?project=story-booth) and create a credential. Download the json and transfer to the Storybooth folder on the RPi. (https://file.io can be handy.) Rename to `client_secret.json`.
 
 #### Service account credentials
