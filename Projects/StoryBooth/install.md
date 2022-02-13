@@ -2,7 +2,7 @@
 title: Software Setup
 description: 
 published: true
-date: 2022-02-11T20:40:47.468Z
+date: 2022-02-13T18:59:42.366Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -11,18 +11,18 @@ dateCreated: 2022-02-11T20:40:47.468Z
 # Setting up a new device
 
 ### Update
-```bash
+```shell
 sudo apt update
 sudo apt upgrade
 ```
 
 ### Clone repo
-```bash
+```shell
 git clone https://github.com/phizeroth/storybooth
 ```
 
 ### Increase GPU memory
-```bash
+```shell
 sudo raspi-config
 ```
 - Select Performance Options
@@ -32,10 +32,35 @@ sudo raspi-config
 ## Google OAuth
 
 ### Install PyDrive
-```bash
+```shell
 pip3 install pydrive
 ```
 
 ### Get OAuth credentials
 Go to https://console.developers.google.com/apis/credentials?project=story-booth and create a credential. Download the json and transfer to the Storybooth folder on the RPi. (https://file.io can be handy.)
 
+### Destination configuration
+Edit `id.json`
+```json
+{
+  "team_drive_id": <stays the same>,
+  "location": <device's assigned location>,
+  "folder_id": <folder id to upload to>
+}
+```
+The folder id comes from the end of the Drive folder url, e.g. `https://drive.google.com/drive/folders/` _`1dq1SCmszEyART3VkqxKUgvRiGlUA8x_8`_
+
+
+## Startup configuration
+Make `run.py` executable:
+```shell
+sudo chmod +x /home/pi/storybooth/run.py
+```
+Place `storybooth.service` into `/lib/systemd/system`
+
+Reload systemctl and reboot:
+```shell
+sudo systemctl daemon-reload
+sudo systemctl enable storybooth.service
+sudo reboot
+```
