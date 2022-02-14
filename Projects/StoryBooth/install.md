@@ -2,7 +2,7 @@
 title: New StoryBooth Device Setup
 description: A guide for setting up a new completed StoryBooth device after first powering it on
 published: true
-date: 2022-02-14T17:19:22.017Z
+date: 2022-02-14T17:22:57.197Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -45,8 +45,8 @@ pip3 install pydrive
 
 #### Extract secrets
 ```shell
-gpg json.tar.gpg
-tar -xvf json.tar
+gpg auth.tar.gpg
+tar -xvf auth.tar
 ```
 
 * API Client ID:
