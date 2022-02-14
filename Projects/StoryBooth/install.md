@@ -2,25 +2,19 @@
 title: New StoryBooth Device Setup
 description: A guide for setting up a new completed StoryBooth device after first powering it on
 published: true
-date: 2022-02-14T17:22:57.197Z
+date: 2022-02-14T19:37:06.321Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
 ---
+
+## OS setup
 
 ### Update
 ```shell
 sudo apt update
 sudo apt upgrade
 ```
-
-### Clone repo
-```shell
-git clone https://github.com/phizeroth/storybooth
-```
-
-> After this point, all shell commands in these instructions assume you are in the /home/pi/storybooth folder.
-{.is-info}
 
 ### Increase GPU memory
 ```shell
@@ -33,6 +27,16 @@ sudo raspi-config
 ### Update hostname
 Go to Raspberry Pi Configuration from Preferences menu, update hostname to `storybooth_#`, replacing `#` with the device number.
 
+## Install StoryBooth application
+
+### Clone repo
+```shell
+git clone https://github.com/phizeroth/storybooth
+```
+
+> After this point, all shell commands in these instructions assume you are in the /home/pi/storybooth folder.
+{.is-info}
+
 ## Install dependencies
 
 * Install [picam](https://github.com/iizukanao/picam) by following instructions at https://github.com/iizukanao/picam.
@@ -43,10 +47,11 @@ pip3 install pydrive
 
 ## Google OAuth
 
-#### Extract secrets
+Extract secrets:
 ```shell
 gpg auth.tar.gpg
 tar -xvf auth.tar
+rm auth.tar*
 ```
 
 * API Client ID:
@@ -56,15 +61,15 @@ tar -xvf auth.tar
 [Google Cloud Platform | IAM | Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts?project=story-booth&supportedpurview=project)
 
 ### Destination configuration
-Edit `id.json`
+Edit `auth/folder.json` to assign the device to a particular site/location/purpose. This will set the folder which all the device's videos will upload to:
 ```json
 {
   "team_drive_id": <stays the same>,
-  "location": <device's assigned location>,
+  "location": <name of device's assigned location>,
   "folder_id": <folder id to upload to>
 }
 ```
-The folder id comes from the end of the Drive folder url, e.g. `https://drive.google.com/drive/folders/` _`1dq1SCmszEyART3VkqxKUgvRiGlUA8x_8`_
+The folder id comes from the end of the Drive folder url, e.g. `https://drive.google.com/drive/folders/` _`9dq1SCmsasj73VkqxKUgvRiKlUA3x_8`_
 
 
 ## Startup configuration
