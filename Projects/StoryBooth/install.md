@@ -1,14 +1,12 @@
 ---
-title: New Device Setup
+title: New StoryBooth Device Setup
 description: A guide for setting up a new completed StoryBooth device after first powering it on
 published: true
-date: 2022-02-14T16:35:37.217Z
+date: 2022-02-14T17:19:22.017Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
 ---
-
-# Setting up a new device
 
 ### Update
 ```shell
@@ -20,6 +18,9 @@ sudo apt upgrade
 ```shell
 git clone https://github.com/phizeroth/storybooth
 ```
+
+> After this point, all shell commands in these instructions assume you are in the /home/pi/storybooth folder.
+{.is-info}
 
 ### Increase GPU memory
 ```shell
@@ -34,15 +35,13 @@ Go to Raspberry Pi Configuration from Preferences menu, update hostname to `stor
 
 ## Install dependencies
 
-* Install `picam` by following instructions at https://github.com/iizukanao/picam.
-* Install `PyDrive`:
+* Install [picam](https://github.com/iizukanao/picam) by following instructions at https://github.com/iizukanao/picam.
+* Install [PyDrive](https://pythonhosted.org/PyDrive/index.html):
 ```shell
 pip3 install pydrive
 ```
 
 ## Google OAuth
-
-### Get OAuth credentials
 
 #### Extract secrets
 ```shell
@@ -50,11 +49,11 @@ gpg json.tar.gpg
 tar -xvf json.tar
 ```
 
-#### API client ID
-Go to [Google Cloud Platform | APIs and Services | Credentials](https://console.developers.google.com/apis/credentials?project=story-booth)
+* API Client ID:
+[Google Cloud Platform | APIs and Services | Credentials](https://console.developers.google.com/apis/credentials?project=story-booth)
 
-#### Service account credentials
-Go to [Google Cloud Platform | IAM | Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts?project=story-booth&supportedpurview=project)
+* Service account credentials:
+[Google Cloud Platform | IAM | Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts?project=story-booth&supportedpurview=project)
 
 ### Destination configuration
 Edit `id.json`
@@ -69,13 +68,18 @@ The folder id comes from the end of the Drive folder url, e.g. `https://drive.go
 
 
 ## Startup configuration
-Make `run.py` executable:
-```shell
-sudo chmod +x /home/pi/storybooth/run.py
-```
-Place `storybooth.service` into `/lib/systemd/system`
+The StoryBooth program needs to run at startup. To do so, follow these steps.
 
-Reload systemctl and reboot:
+* Make `run.py` executable:
+```shell
+sudo chmod +x run.py
+```
+* Place `asset/storybooth.service` into `/lib/systemd/system`.
+```shell
+cp asset/storybooth.service /lib/systemd/system/storybooth.service
+```
+
+* Reload systemctl and reboot:
 ```shell
 sudo systemctl daemon-reload
 sudo systemctl enable storybooth.service
