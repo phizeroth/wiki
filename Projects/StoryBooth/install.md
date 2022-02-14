@@ -2,7 +2,7 @@
 title: New Device Setup
 description: 
 published: true
-date: 2022-02-13T20:57:17.817Z
+date: 2022-02-14T16:25:08.819Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -43,8 +43,8 @@ pip3 install pydrive
 
 #### Extract secrets
 ```shell
-gpg keys.tar.gpg
-tar -xvf keys.tar
+gpg json.tar.gpg
+tar -xvf json.tar
 ```
 
 #### API client ID
