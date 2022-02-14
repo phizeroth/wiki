@@ -1,8 +1,8 @@
 ---
 title: New Device Setup
-description: 
+description: A guide for setting up a new completed StoryBooth device after first powering it on
 published: true
-date: 2022-02-14T16:25:08.819Z
+date: 2022-02-14T16:35:37.217Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -32,12 +32,15 @@ sudo raspi-config
 ### Update hostname
 Go to Raspberry Pi Configuration from Preferences menu, update hostname to `storybooth_#`, replacing `#` with the device number.
 
-## Google OAuth
+## Install dependencies
 
-### Install PyDrive
+* Install `picam` by following instructions at https://github.com/iizukanao/picam.
+* Install `PyDrive`:
 ```shell
 pip3 install pydrive
 ```
+
+## Google OAuth
 
 ### Get OAuth credentials
 
