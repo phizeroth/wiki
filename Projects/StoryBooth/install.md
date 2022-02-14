@@ -2,7 +2,7 @@
 title: New StoryBooth Device Setup
 description: A guide for setting up a new completed StoryBooth device after first powering it on
 published: true
-date: 2022-02-14T19:37:06.321Z
+date: 2022-02-14T19:43:33.305Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -37,7 +37,7 @@ git clone https://github.com/phizeroth/storybooth
 > After this point, all shell commands in these instructions assume you are in the /home/pi/storybooth folder.
 {.is-info}
 
-## Install dependencies
+### Install dependencies
 
 * Install [picam](https://github.com/iizukanao/picam) by following instructions at https://github.com/iizukanao/picam.
 * Install [PyDrive](https://pythonhosted.org/PyDrive/index.html):
@@ -73,13 +73,13 @@ The folder id comes from the end of the Drive folder url, e.g. `https://drive.go
 
 
 ## Startup configuration
-The StoryBooth program needs to run at startup. To do so, follow these steps.
+The StoryBooth program needs to automatically run at startup. To do so, use the included unit file to configure `systemd`:
 
 * Make `run.py` executable:
 ```shell
 sudo chmod +x run.py
 ```
-* Place `asset/storybooth.service` into `/lib/systemd/system`.
+* Place the unit file `asset/storybooth.service` into `/lib/systemd/system`.
 ```shell
 cp asset/storybooth.service /lib/systemd/system/storybooth.service
 ```
@@ -91,12 +91,12 @@ sudo systemctl enable storybooth.service
 sudo reboot
 ```
 
-## Remote configuration
+## Set up remote access
 - Download and install TeamViewer:
 https://www.teamviewer.com/en-us/download/raspberry-pi
 - Open TeamViewer from the system tray and log in to account.
 
 ## Other
-- Set `/home/pi/storybooth/desktop.png` to background image
+- Right-click desktop, Desktop Preferences, set background picture to `/home/pi/storybooth/asset/desktop.png`
 - Right-click Trash icon on desktop and "Remove from desktop"
 - Right-click panel, select Panel Settings, Advanced tab, check "Minimize panel when not in use"
