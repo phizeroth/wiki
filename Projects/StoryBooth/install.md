@@ -2,7 +2,7 @@
 title: New StoryBooth Device Setup
 description: A guide for setting up a new completed StoryBooth device after first powering it on
 published: true
-date: 2022-02-15T16:44:05.139Z
+date: 2022-02-15T17:19:08.835Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -83,7 +83,7 @@ sudo chmod +x run.py
 ```
 * Place the unit file `asset/storybooth.service` into `/lib/systemd/system`.
 ```shell
-cp asset/storybooth.service /lib/systemd/system/storybooth.service
+sudo cp asset/storybooth.service /lib/systemd/system/storybooth.service
 ```
 
 * Reload systemctl and reboot:
