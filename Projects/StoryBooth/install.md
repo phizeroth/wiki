@@ -2,7 +2,7 @@
 title: New StoryBooth Device Setup
 description: A guide for setting up a new completed StoryBooth device after first powering it on
 published: true
-date: 2022-02-15T17:19:08.835Z
+date: 2022-02-15T17:29:14.042Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -79,7 +79,7 @@ The StoryBooth program needs to automatically run at startup. To do so, use the 
 
 * Make `run.py` executable:
 ```shell
-sudo chmod +x run.py
+chmod +x run.py
 ```
 * Place the unit file `asset/storybooth.service` into `/lib/systemd/system`.
 ```shell
