@@ -2,7 +2,7 @@
 title: New StoryBooth Device Setup
 description: A guide for setting up a new completed StoryBooth device after first powering it on
 published: true
-date: 2022-02-15T16:24:28.303Z
+date: 2022-02-15T16:44:05.139Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-11T20:40:47.468Z
@@ -56,10 +56,10 @@ rm auth.tar*
 
 These files in the auth folder provide PyDrive and Google OAuth the credentials for the API client and the service account used to upload to Google Drive. 
 
-* API Client ID:
+* API Client ID: `client_secret.json`
 [Google Cloud Platform | APIs and Services | Credentials](https://console.developers.google.com/apis/credentials?project=story-booth)
 
-* Service account credentials:
+* Service account credentials: `credentials.json`
 [Google Cloud Platform | IAM | Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts?project=story-booth&supportedpurview=project)
 
 ### Destination configuration
