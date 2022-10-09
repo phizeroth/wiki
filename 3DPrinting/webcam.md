@@ -2,7 +2,7 @@
 title: Webcam
 description: 
 published: true
-date: 2022-10-09T00:53:10.612Z
+date: 2022-10-09T01:09:19.025Z
 tags: #3dp, octoprint
 editor: markdown
 dateCreated: 2022-10-07T16:35:30.068Z
@@ -43,3 +43,4 @@ camera_usb_options="-r 640x480 -f 15"
 ## References
 - https://community.octoprint.org/t/disable-autofocus-on-usb-webcam-config-using-v4l2-ctl-on-linux/30393
 - https://iotrant.com/2020/02/25/properly-configuring-a-camera-in-octoprint/
+- https://community.octoprint.org/t/available-mjpg-streamer-configuration-options/1106
