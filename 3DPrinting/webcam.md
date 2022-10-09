@@ -2,7 +2,7 @@
 title: Webcam
 description: 
 published: true
-date: 2022-10-09T00:50:17.781Z
+date: 2022-10-09T00:53:10.612Z
 tags: #3dp, octoprint
 editor: markdown
 dateCreated: 2022-10-07T16:35:30.068Z
@@ -37,8 +37,8 @@ Uncomment and edit the following line:
 ```
 camera_usb_options="-r 640x480 -f 15"
 ```
-`r`: resolution
-`f`: framerate
+`-r`: resolution
+`-f`: framerate
 
 ## References
 - https://community.octoprint.org/t/disable-autofocus-on-usb-webcam-config-using-v4l2-ctl-on-linux/30393
