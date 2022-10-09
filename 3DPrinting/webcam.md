@@ -2,7 +2,7 @@
 title: Webcam
 description: 
 published: true
-date: 2022-10-09T00:49:25.316Z
+date: 2022-10-09T00:50:17.781Z
 tags: #3dp, octoprint
 editor: markdown
 dateCreated: 2022-10-07T16:35:30.068Z
@@ -34,7 +34,9 @@ sudo nano /boot/octopi.txt
 ```
 
 Uncomment and edit the following line:
-`camera_usb_options="-r 640x480 -f 15"`
+```
+camera_usb_options="-r 640x480 -f 15"
+```
 `r`: resolution
 `f`: framerate
 
