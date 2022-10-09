@@ -2,13 +2,13 @@
 title: Webcam
 description: 
 published: true
-date: 2022-10-07T16:38:14.357Z
-tags: #3dp
+date: 2022-10-09T00:49:25.316Z
+tags: #3dp, octoprint
 editor: markdown
 dateCreated: 2022-10-07T16:35:30.068Z
 ---
 
-# Webcam
+# Webcam (OctoPrint)
 ## Disable autofocus
 
 Autofocusing webcams may struggle with the constant movement of the bed. To manually disable autofocus:
@@ -27,5 +27,17 @@ To re-enable autofocus:
 sudo v4l2-ctl --set-ctrl=focus_auto=1
 ```
 
+## Change camera settings
+```bash
+ssh pi@octopi.local
+sudo nano /boot/octopi.txt
+```
+
+Uncomment and edit the following line:
+`camera_usb_options="-r 640x480 -f 15"`
+`r`: resolution
+`f`: framerate
+
 ## References
 - https://community.octoprint.org/t/disable-autofocus-on-usb-webcam-config-using-v4l2-ctl-on-linux/30393
+- https://iotrant.com/2020/02/25/properly-configuring-a-camera-in-octoprint/
