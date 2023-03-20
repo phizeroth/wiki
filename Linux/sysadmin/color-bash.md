@@ -2,7 +2,7 @@
 title: color bash prompt
 description: 
 published: true
-date: 2023-03-20T20:43:26.878Z
+date: 2023-03-20T20:44:29.279Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-20T20:43:26.878Z
@@ -33,7 +33,7 @@ config_color_prompt () {
         local CURSOR=${BOLD}${ORNG}
 
         PS1="${debian_chroot:+($debian_chroot)}${USR}\u${AT}@${HOST}\h${PATH} \w ${CURSOR}\$${RESET} "
-#        PS1='${debian_chroot:+($debian_chroot)}\[\e[01;32m\]\u\[\e[96m\]@\[\e[01;95m\]\h\[\e[96m\] \w \[\e[01;95m\]\$\$    else
+    else
         PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
     fi
 }
