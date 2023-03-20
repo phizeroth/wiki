@@ -2,7 +2,7 @@
 title: color bash prompt
 description: 
 published: true
-date: 2023-03-20T20:50:51.283Z
+date: 2023-03-20T23:47:30.045Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-20T20:43:26.878Z
@@ -41,6 +41,7 @@ config_color_prompt
 # ----------------------
 ```
 # Handy scripts
+These shell scripts generate palettes in the terminal along with color code values to help with choosing and previewing colors.
 
 ## `16-color.sh`
 ```bash
