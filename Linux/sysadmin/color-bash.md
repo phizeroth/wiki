@@ -2,7 +2,7 @@
 title: color bash prompt
 description: 
 published: true
-date: 2023-03-20T20:44:29.279Z
+date: 2023-03-20T20:50:51.283Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-20T20:43:26.878Z
@@ -98,5 +98,6 @@ config_color_prompt
 ```
 
 # References
-* https://misc.flogisoft.com/bash/tip_colors_and_formatting
-* https://bashrcgenerator.com/
+- https://misc.flogisoft.com/bash/tip_colors_and_formatting
+- https://bashrcgenerator.com/
+{.links-list}
