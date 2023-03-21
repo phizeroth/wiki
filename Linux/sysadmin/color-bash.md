@@ -2,7 +2,7 @@
 title: color bash prompt
 description: 
 published: true
-date: 2023-03-20T23:47:30.045Z
+date: 2023-03-21T00:12:03.130Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-20T20:43:26.878Z
@@ -10,7 +10,7 @@ dateCreated: 2023-03-20T20:43:26.878Z
 
 # .bashrc
 
-Replace/modify the default color block in the `.bashrc` with this for a more intuitive experience customizing the bash colors:
+Replace/modify the default `if [ "$color_prompt" = yes ]; then ...` block in the `.bashrc` with this for a more intuitive experience customizing the bash colors:
 ```bash
 # ----------------------
 # CONFIGURE COLOR PROMPT
