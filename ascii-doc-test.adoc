@@ -1,0 +1,22 @@
+= header
+
+[caption=]
+.Table Example
+[%autowidth,stripes=even]
+
+|===
+|d |fsa |asdf
+|adf |asdfsd
+|adsfadsf |adfa
+|===
+
+[quote]
+adfsa
+
+NOTE: Testing note
+
+WARNING: Testing warning
+
+[source,js]
+require testing
+let a = 0
