@@ -18,5 +18,23 @@ NOTE: Testing note
 WARNING: Testing warning
 
 [source,js]
-require testing
-let a = 0
+----
+if (true) {
+	let a = 0 // <1>
+}
+----
+<1> Callout example
+
+.Optional Title
+****
+Sidebars are used to visually separate auxiliary bits of content
+that supplement the main text.
+
+TIP: They can contain any type of content.
+
+.Source code block in a sidebar
+[source,js]
+----
+const { expect, expectCalledWith, heredoc } = require('../test/test-utils')
+----
+****
