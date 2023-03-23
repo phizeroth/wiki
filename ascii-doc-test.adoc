@@ -25,16 +25,20 @@ if (true) {
 ----
 <1> Callout example
 
-.Optional Title
-****
-Sidebars are used to visually separate auxiliary bits of content
-that supplement the main text.
+.Basic unordered list
+* Thing 1
+** Subthing
+* Thing 3
 
-TIP: They can contain any type of content.
+'''
 
-.Source code block in a sidebar
-[source,js]
-----
-const { expect, expectCalledWith, heredoc } = require('../test/test-utils')
-----
-****
+.This is called a description list
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.
+Keyboard:: Used to enter text or control items on the screen.
+Mouse:: Used to point to and select items on your computer screen.
+Monitor:: Displays information in visual form using text and graphics.
+
+
+video::W33_l1oOX9A[youtube]
