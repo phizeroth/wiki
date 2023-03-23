@@ -11,11 +11,17 @@
 |===
 
 [quote]
-adfsa
+Testing quote
+
+TIP: Testing tip
 
 NOTE: Testing note
 
+CAUTION: Testing caution
+
 WARNING: Testing warning
+
+IMPORTANT: Testing important
 
 [source,js]
 ----
@@ -40,5 +46,5 @@ Keyboard:: Used to enter text or control items on the screen.
 Mouse:: Used to point to and select items on your computer screen.
 Monitor:: Displays information in visual form using text and graphics.
 
-
+= Video embed
 video::W33_l1oOX9A[youtube]
