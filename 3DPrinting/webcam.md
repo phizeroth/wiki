@@ -1,8 +1,8 @@
 ---
-title: Webcam
-description: 
+title: Webcam (OctoPrint)
+description: Settings for webcam optimization with OctoPrint
 published: true
-date: 2023-03-24T02:17:13.557Z
+date: 2023-03-24T02:19:20.085Z
 tags: #3dp, octoprint
 editor: markdown
 dateCreated: 2022-10-07T16:35:30.068Z
