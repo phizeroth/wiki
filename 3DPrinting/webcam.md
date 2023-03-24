@@ -2,13 +2,12 @@
 title: Webcam
 description: 
 published: true
-date: 2022-10-09T01:09:19.025Z
+date: 2023-03-24T02:17:13.557Z
 tags: #3dp, octoprint
 editor: markdown
 dateCreated: 2022-10-07T16:35:30.068Z
 ---
 
-# Webcam (OctoPrint)
 ## Disable autofocus
 
 Autofocusing webcams may struggle with the constant movement of the bed. To manually disable autofocus:
