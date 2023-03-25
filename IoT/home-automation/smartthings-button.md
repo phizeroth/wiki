@@ -2,7 +2,7 @@
 title: SmartThings Button
 description: Small, multi-function Zigbee switch
 published: true
-date: 2023-03-25T21:15:03.260Z
+date: 2023-03-25T21:17:09.704Z
 tags: iot, hass, smartthings, zigbee
 editor: markdown
 dateCreated: 2020-08-06T21:22:00.320Z
@@ -26,8 +26,6 @@ After pairing with deCONZ, the device shows up in HassOS as a "button" by manufa
 |-|
 |sensor.button_battery_level
 |sensor.temperature
-
-> The button functionality itself does *not* show up in HassOS as a device or entity.{.is-info}
 
 In order to capture the button as a trigger, first go to Developer Tools > Events, subscribe and listen to `deconz_event` and press the button to get the `id`. DeCONZ has been known to change a device's `id` after a reboot, so for extra certainty, use the `unique_id` instead.
 
