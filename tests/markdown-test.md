@@ -2,11 +2,16 @@
 title: Markdown sandbox
 description: 
 published: true
-date: 2023-03-25T17:17:53.341Z
+date: 2023-03-25T17:22:13.123Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-25T15:42:27.782Z
 ---
+
+|-|-|
+test|test
+test|test
+{.float-right}
 
 <div style="float:right; margin:12px; width: 25%">
   <table>
