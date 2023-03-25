@@ -2,7 +2,7 @@
 title: Markdown sandbox
 description: 
 published: true
-date: 2023-03-25T18:03:54.303Z
+date: 2023-03-25T18:19:03.435Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-25T15:42:27.782Z
@@ -14,9 +14,7 @@ dateCreated: 2023-03-25T15:42:27.782Z
 |Appearance|Cute|
 {.float-right}
 
-![white-philips-dimmers-458141-64_1000.jpg](/IoT/white-philips-dimmers-458141-64_1000.jpg =20%x){.float-right}
-
-# Lorem Ipsum
+# Lorem Ipsum{.float-left}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
