@@ -2,13 +2,14 @@
 title: Markdown sandbox
 description: 
 published: true
-date: 2023-03-25T17:16:31.789Z
+date: 2023-03-25T17:17:25.273Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-25T15:42:27.782Z
 ---
 
-<table style="float:right; margin:12px; width: 25%">
+<div style="float:right; margin:12px; width: 25%">
+  <table>
   <tr>
     <td colspan="2"><img src="https://picsum.photos/id/237/300/300"></td>
   </tr>
@@ -21,6 +22,7 @@ dateCreated: 2023-03-25T15:42:27.782Z
     <td>Cute</td>
   </tr>
 </table>
+</div>
 
 <div style="float:right">
 	Testing<br>testing<br>testing<br>testing
