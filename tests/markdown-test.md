@@ -2,7 +2,7 @@
 title: Markdown sandbox
 description: 
 published: true
-date: 2023-03-25T15:45:37.332Z
+date: 2023-03-25T15:50:17.486Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-25T15:42:27.782Z
@@ -22,4 +22,4 @@ dateCreated: 2023-03-25T15:42:27.782Z
 
 | -------- | -------- | -------- |
 | Foo      | Bar      | Xyz      |
-| Abc      | Def      | 123      |
+| Abc      | Def      | 123      | 
