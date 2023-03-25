@@ -2,31 +2,23 @@
 title: SmartThings Button
 description: Small, multi-function Zigbee switch
 published: true
-date: 2023-03-25T21:01:30.779Z
+date: 2023-03-25T21:05:22.898Z
 tags: iot, hass, smartthings, zigbee
 editor: markdown
 dateCreated: 2020-08-06T21:22:00.320Z
 ---
 
-![smartbutton_01_0000400.png](/smartbutton_01_0000400.png =480x){.align-abstopright}
+![smartbutton_01_0000400.png](/smartbutton_01_0000400.png){.align-abstopright}
 
-## Overview
+*[RFD]: Reduced-function device (does not extend mesh)
 
-- **Protocol**
-  - [Zigbee](https://en.wikipedia.org/wiki/Zigbee)
-    - Reduced-function device (RFD), does not extend mesh
-
-- **Power**
-  - Battery (CR2450 3V)
-
-- **Features**
-  - inputs
-    - single press
-    - long press
-    - double press
-  - sensors
-	  - battery level
-	  - temperature
+|-|-|
+![smartbutton_01_0000400.png](/smartbutton_01_0000400.png)||
+Protocol|Zigbee (RFD)
+Power|Battery<br>CR2450 3V
+Inputs|single press<br>long press<br>double press
+Sensors|battery level<br>temperature
+{.float-right}
 
 ## Setup
 
