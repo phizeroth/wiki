@@ -2,7 +2,7 @@
 title: Markdown sandbox
 description: 
 published: true
-date: 2023-03-25T18:40:32.029Z
+date: 2023-03-25T18:41:33.694Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-25T15:42:27.782Z
@@ -12,6 +12,7 @@ dateCreated: 2023-03-25T15:42:27.782Z
 |<img src="https://picsum.photos/id/237/240">||
 |Animal|Doggo|
 |Appearance|Cute|
+
 {.float-right}
 
 # Lorem Ipsum
