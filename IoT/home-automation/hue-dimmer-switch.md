@@ -2,13 +2,13 @@
 title: Philips Hue dimmer switch
 description: 
 published: true
-date: 2023-03-25T17:51:04.071Z
+date: 2023-03-25T20:51:25.455Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-13T15:49:46.103Z
 ---
 
-![white-philips-dimmers-458141-64_1000.jpg](/IoT/white-philips-dimmers-458141-64_1000.jpg){.align-abstopright}
+
 
 *[RFD]: Reduced function device, does not extend mesh
 
