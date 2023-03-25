@@ -2,12 +2,13 @@
 title: SmartThings Button
 description: Small, multi-function Zigbee switch
 published: true
-date: 2020-08-18T18:21:19.686Z
+date: 2023-03-25T21:01:30.779Z
 tags: iot, hass, smartthings, zigbee
 editor: markdown
+dateCreated: 2020-08-06T21:22:00.320Z
 ---
 
-![smartbutton_01_0000400.png](/smartbutton_01_0000400.png =250x){.align-abstopright}
+![smartbutton_01_0000400.png](/smartbutton_01_0000400.png =480x){.align-abstopright}
 
 ## Overview
 
