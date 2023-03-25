@@ -2,7 +2,7 @@
 title: SmartThings Button
 description: Small, multi-function Zigbee switch
 published: true
-date: 2023-03-25T21:05:22.898Z
+date: 2023-03-25T21:15:03.260Z
 tags: iot, hass, smartthings, zigbee
 editor: markdown
 dateCreated: 2020-08-06T21:22:00.320Z
@@ -23,9 +23,9 @@ Sensors|battery level<br>temperature
 ## Setup
 
 After pairing with deCONZ, the device shows up in HassOS as a "button" by manufacturer Samjin, with two entities:
-- sensor.button_battery_level
-- sensor.temperature
-{.grid-list}
+|-|
+|sensor.button_battery_level
+|sensor.temperature
 
 > The button functionality itself does *not* show up in HassOS as a device or entity.{.is-info}
 
