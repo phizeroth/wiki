@@ -2,7 +2,7 @@
 title: C++ Data Types
 description: 
 published: true
-date: 2022-04-11T16:59:53.263Z
+date: 2023-03-25T21:35:15.626Z
 tags: arduino, code
 editor: markdown
 dateCreated: 2022-04-11T16:58:35.925Z
@@ -21,6 +21,7 @@ C type             | Arduino    | stdint.h   | bytes | range
 `int`              |            | `int32_t`  | 4   | `-2,147,483,648 .. 2,147,483,647`
 `unsigned long`    |            | `uint64_t` | 8   | `0 .. 18,446,744,073,709,551,615`
 `long`             |            | `int64_t`  | 8  | `-9,223,372,036,854,775,808 .. 9,223,372,036,854,775,807`
+{.monospace}
 
 ## Floating Point Data Types
 
