@@ -2,7 +2,7 @@
 title: Philips Hue dimmer switch
 description: 
 published: true
-date: 2023-03-25T16:15:05.732Z
+date: 2023-03-25T16:42:23.989Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-13T15:49:46.103Z
@@ -10,12 +10,29 @@ dateCreated: 2021-06-13T15:49:46.103Z
 
 ![white-philips-dimmers-458141-64_1000.jpg](/IoT/white-philips-dimmers-458141-64_1000.jpg){.align-abstopright}
 
-*[RFD]: Reduced function device
-|-|-|-|
-| Protocol | [Zigbee](https://en.wikipedia.org/wiki/Zigbee)| RFD - does not extend mesh
-| Power | Battery| CR2450 3V
-| Features | inputs| single press<br>long press
-| ^^ | sensors| battery level
+*[RFD]: Reduced function device, does not extend mesh
+
+<table style="float:right; margin:12px; width: 25%; z-index:1">
+  <tr>
+    <td colspan="2"><img src="https://wiki.phiz.io/IoT/white-philips-dimmers-458141-64_1000.jpg"></td>
+  </tr>
+  <tr>
+    <td>Protocol</td>
+    <td>Zigbee (RFD)</td>
+  </tr>
+  <tr>
+    <td>Power</td>
+    <td>Battery<br>(CR2450 3V)</td>
+  </tr>
+  <tr>
+    <td>Inputs</td>
+    <td>single press<br>double press</td>
+  </tr>
+  <tr>
+    <td>Sensors</td>
+    <td>battery level</td>
+  </tr>
+</table>
 
 ## Setup
 
