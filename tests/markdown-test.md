@@ -2,7 +2,7 @@
 title: Markdown sandbox
 description: 
 published: true
-date: 2023-03-25T17:17:25.273Z
+date: 2023-03-25T17:17:53.341Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-25T15:42:27.782Z
@@ -10,22 +10,18 @@ dateCreated: 2023-03-25T15:42:27.782Z
 
 <div style="float:right; margin:12px; width: 25%">
   <table>
-  <tr>
-    <td colspan="2"><img src="https://picsum.photos/id/237/300/300"></td>
-  </tr>
-  <tr>
-    <td>Animal</td>
-    <td>Doggo</td>
-  </tr>
-  <tr>
-    <td>Appearance</td>
-    <td>Cute</td>
-  </tr>
-</table>
-</div>
-
-<div style="float:right">
-	Testing<br>testing<br>testing<br>testing
+    <tr>
+      <td colspan="2"><img src="https://picsum.photos/id/237/300/300"></td>
+    </tr>
+    <tr>
+      <td>Animal</td>
+      <td>Doggo</td>
+    </tr>
+    <tr>
+      <td>Appearance</td>
+      <td>Cute</td>
+    </tr>
+	</table>
 </div>
 
 # Lorem Ipsum
