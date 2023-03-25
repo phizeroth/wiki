@@ -2,7 +2,7 @@
 title: Philips Hue dimmer switch
 description: 
 published: true
-date: 2023-03-25T15:38:28.868Z
+date: 2023-03-25T15:39:06.585Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-13T15:49:46.103Z
@@ -12,10 +12,11 @@ dateCreated: 2021-06-13T15:49:46.103Z
 
 ## Overview
 
+|t|t|t
 :-|-|-:
 |Protocol|[Zigbee](https://en.wikipedia.org/wiki/Zigbee)|Reduced-function device (RFD), does not extend mesh
 |Power|Battery|CR2450 3V
-|Features|inputssensors|single press, long pressbattery level
+|Features|inputs<br>sensors|single press, long press<br>battery level
 
 ## Setup
 
