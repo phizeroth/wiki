@@ -2,13 +2,13 @@
 title: Philips Hue dimmer switch
 description: 
 published: true
-date: 2023-03-25T20:51:25.455Z
+date: 2023-03-25T20:55:01.730Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-13T15:49:46.103Z
 ---
 
-
+![white-philips-dimmers-458141-64_1000.jpg](/IoT/white-philips-dimmers-458141-64_1000.jpg){.align-abstopright}
 
 *[RFD]: Reduced function device, does not extend mesh
 
@@ -20,7 +20,7 @@ dateCreated: 2021-06-13T15:49:46.103Z
 |Sensors|battery level|
 {.float-right}
 
-## Setup
+# Setup
 
 In order to capture the button as a trigger, first go to Developer Tools > Events, subscribe and listen to `deconz_event` and press the button to get the `id`. DeCONZ has been known to change a device's `id` after a reboot, so for extra certainty, use the `unique_id` instead.
 
