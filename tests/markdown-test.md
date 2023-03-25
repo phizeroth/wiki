@@ -2,21 +2,22 @@
 title: Markdown sandbox
 description: 
 published: true
-date: 2023-03-25T17:22:13.123Z
+date: 2023-03-25T17:45:02.849Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-25T15:42:27.782Z
 ---
 
 |-|-|
-test|test
-test|test
+|<img src="https://picsum.photos/id/237/480">||
+|Animal|Doggo
+Appearance|Cute
 {.float-right}
 
 <div style="float:right; margin:12px; width: 25%">
   <table>
     <tr>
-      <td colspan="2"><img src="https://picsum.photos/id/237/300/300"></td>
+      <td colspan="2"><img src="https://picsum.photos/id/237/480"></td>
     </tr>
     <tr>
       <td>Animal</td>
