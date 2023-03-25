@@ -2,7 +2,7 @@
 title: Philips Hue dimmer switch
 description: 
 published: true
-date: 2023-03-25T15:39:50.462Z
+date: 2023-03-25T15:58:11.985Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-13T15:49:46.103Z
@@ -16,7 +16,7 @@ dateCreated: 2021-06-13T15:49:46.103Z
 |Protocol|[Zigbee](https://en.wikipedia.org/wiki/Zigbee)|Reduced-function device (RFD), does not extend mesh
 |Power|Battery|CR2450 3V
 |Features|inputs<br>sensors|single press, long press<br>battery level
-
+ 
 ## Setup
 
 In order to capture the button as a trigger, first go to Developer Tools > Events, subscribe and listen to `deconz_event` and press the button to get the `id`. DeCONZ has been known to change a device's `id` after a reboot, so for extra certainty, use the `unique_id` instead.
