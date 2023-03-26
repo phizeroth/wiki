@@ -2,7 +2,7 @@
 title: Philips Hue dimmer switch
 description: 
 published: true
-date: 2023-03-25T20:55:01.730Z
+date: 2023-03-26T19:50:38.225Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-13T15:49:46.103Z
@@ -62,7 +62,7 @@ single press   | 1000 | 2000 | 3000 | 4000
 single release | 1002 | 2002 | 3002 | 4002
 long press | 1001 | 2001 | 3001 | 4001
 long release | 1003 | 2003 | 3003 | 4003
-
+{.clearfix}
  
 #### ZHA `command`
 
