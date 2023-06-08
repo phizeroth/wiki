@@ -2,7 +2,7 @@
 title: Commodity Crate Colors Reference
 description: 
 published: true
-date: 2023-06-08T16:26:39.913Z
+date: 2023-06-08T16:27:09.881Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-08T15:51:33.890Z
@@ -20,6 +20,7 @@ See [starcitizen.tools/Commodities](https://starcitizen.tools/Commodities) and [
 | **Halogen** | Astatine<br>Chlorine<br>Fluorine | ![crate_slatedblueorange.jpg](/games/starcitizen/crate_slatedblueorange.jpg =50%x)
 | **Food, Medical Supply** | Processed Food<br>Medical Supplies<br>Distilled Spirits (Vice)<br>Various Drugs (Vice) |  ![crate_whiteblackblue.jpg](/games/starcitizen/crate_whiteblackblue.jpg =50%x)
 | **Gas** | Hydrogen | ![crate_whiteyelloworange.jpg](/games/starcitizen/crate_whiteyelloworange.jpg =50%x)
+
 
 ### Notes
 * Although Vices are considered their own category, they don't have their own crate appearance and instead use the crate of the category most similar to them (e.g. Drugs:Medical Supply, Revenant:Agricultural).
