@@ -2,7 +2,7 @@
 title: Commodity Crate Colors Reference
 description: 
 published: true
-date: 2023-06-08T16:27:09.881Z
+date: 2023-06-08T16:28:11.656Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-08T15:51:33.890Z
@@ -13,13 +13,13 @@ See [starcitizen.tools/Commodities](https://starcitizen.tools/Commodities) and [
 
 | Commodity Categories | Examples | Image |
 | - | - | - |
-| **Scrap, Waste** | Scrap<br>Waste | ![crate_browngreygrey.jpg](/games/starcitizen/crate_browngreygrey.jpg =50%x)
-| **Agricultural Supply** | Agricultural Supplies<br>Revenant Tree Pollen (Vice) | ![crate_greenblackgrey.jpg](/games/starcitizen/crate_greenblackgrey.jpg =50%x)
-| **Mineral** | Diamond<br>Beryl<br> | ![crate_lbluewhitepink.jpg](/games/starcitizen/crate_lbluewhitepink.jpg =50%x)
-| **Metal, RMC** | Aluminum<br>Borase<br>Copper<br>Recycled Material Composite | ![crate_lgreygreydgrey.jpg](/games/starcitizen/crate_lgreygreydgrey.jpg =50%x)
-| **Halogen** | Astatine<br>Chlorine<br>Fluorine | ![crate_slatedblueorange.jpg](/games/starcitizen/crate_slatedblueorange.jpg =50%x)
-| **Food, Medical Supply** | Processed Food<br>Medical Supplies<br>Distilled Spirits (Vice)<br>Various Drugs (Vice) |  ![crate_whiteblackblue.jpg](/games/starcitizen/crate_whiteblackblue.jpg =50%x)
-| **Gas** | Hydrogen | ![crate_whiteyelloworange.jpg](/games/starcitizen/crate_whiteyelloworange.jpg =50%x)
+| **Scrap, Waste** | Scrap<br>Waste | ![crate_browngreygrey.jpg](/games/starcitizen/crate_browngreygrey.jpg =40%x)
+| **Agricultural Supply** | Agricultural Supplies<br>Revenant Tree Pollen (Vice) | ![crate_greenblackgrey.jpg](/games/starcitizen/crate_greenblackgrey.jpg =40%x)
+| **Mineral** | Diamond<br>Beryl<br> | ![crate_lbluewhitepink.jpg](/games/starcitizen/crate_lbluewhitepink.jpg =40%x)
+| **Metal, RMC** | Aluminum<br>Borase<br>Copper<br>Recycled Material Composite | ![crate_lgreygreydgrey.jpg](/games/starcitizen/crate_lgreygreydgrey.jpg =40%x)
+| **Halogen** | Astatine<br>Chlorine<br>Fluorine | ![crate_slatedblueorange.jpg](/games/starcitizen/crate_slatedblueorange.jpg =40%x)
+| **Food, Medical Supply** | Processed Food<br>Medical Supplies<br>Distilled Spirits (Vice)<br>Various Drugs (Vice) |  ![crate_whiteblackblue.jpg](/games/starcitizen/crate_whiteblackblue.jpg =40%x)
+| **Gas** | Hydrogen | ![crate_whiteyelloworange.jpg](/games/starcitizen/crate_whiteyelloworange.jpg =40%x)
 
 
 ### Notes
