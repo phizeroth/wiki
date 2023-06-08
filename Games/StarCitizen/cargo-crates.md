@@ -2,13 +2,11 @@
 title: Commodity Crate Colors Reference
 description: 
 published: true
-date: 2023-06-08T15:52:38.276Z
+date: 2023-06-08T15:53:12.391Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-08T15:51:33.890Z
 ---
-
-# Header
 
 | Commodity Category | Image |
 | - | - |
