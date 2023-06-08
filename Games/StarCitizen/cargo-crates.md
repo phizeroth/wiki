@@ -2,7 +2,7 @@
 title: Commodity Crate Colors Reference
 description: 
 published: true
-date: 2023-06-08T15:51:33.891Z
+date: 2023-06-08T15:52:38.276Z
 tags: 
 editor: markdown
 dateCreated: 2023-06-08T15:51:33.890Z
@@ -12,7 +12,7 @@ dateCreated: 2023-06-08T15:51:33.890Z
 
 | Commodity Category | Image |
 | - | - |
-|[Scrap](https://starcitizen.tools/Scrap), [Waste](https://starcitizen.tools/Waste)|![crate_browngreygrey.jpg](/games/starcitizen/crate_browngreygrey.jpg =50%x)
+|Scrap, Waste|![crate_browngreygrey.jpg](/games/starcitizen/crate_browngreygrey.jpg =50%x)
 |Agricultural Supply|![crate_greenblackgrey.jpg](/games/starcitizen/crate_greenblackgrey.jpg =50%x)
 | Mineral | ![crate_lbluewhitepink.jpg](/games/starcitizen/crate_lbluewhitepink.jpg =50%x)
 | Metal, RMC | ![crate_lgreygreydgrey.jpg](/games/starcitizen/crate_lgreygreydgrey.jpg =50%x)
