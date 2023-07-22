@@ -2,7 +2,7 @@
 title: color bash prompt
 description: 
 published: true
-date: 2023-07-22T14:43:00.829Z
+date: 2023-07-22T15:20:41.135Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-20T20:43:26.878Z
@@ -41,6 +41,9 @@ config_color_prompt () {
 config_color_prompt
 # ----------------------
 ```
+
+After saving the file, reload by running `source ~/.bashrc` or just `. ~/.bashrc` at the prompt.
+
 # Handy scripts
 These shell scripts generate palettes in the terminal along with color code values to help with choosing and previewing colors.
 
