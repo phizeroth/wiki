@@ -2,7 +2,7 @@
 title: color bash prompt
 description: 
 published: true
-date: 2023-07-22T14:41:49.409Z
+date: 2023-07-22T14:43:00.829Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-20T20:43:26.878Z
