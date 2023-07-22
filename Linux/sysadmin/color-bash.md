@@ -2,15 +2,16 @@
 title: color bash prompt
 description: 
 published: true
-date: 2023-03-21T00:12:03.130Z
+date: 2023-07-22T14:39:11.004Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-20T20:43:26.878Z
 ---
 
-# .bashrc
+# .bashrc color
 
-Replace/modify the default `if [ "$color_prompt" = yes ]; then ...` block in the `.bashrc` with this for a more intuitive experience customizing the bash colors:
+Replace/modify the entire default `if [ "$color_prompt" = yes ]; then ...` block in `~\.bashrc` with this for a more intuitive experience customizing the bash colors:
+
 ```bash
 # ----------------------
 # CONFIGURE COLOR PROMPT
@@ -18,21 +19,21 @@ Replace/modify the default `if [ "$color_prompt" = yes ]; then ...` block in the
 config_color_prompt () {
     if [ "$color_prompt" = yes ]; then
 
-        local GREEN='\e[32m'
-        local CYAN='\e[96m'
-        local ORNG='\e[38;5;202m'
-
         local BOLD='\e[1m'
         local PLAIN='\e[0m'
         local RESET='\[$(tput sgr0)\]'
 
-        local USR=${BOLD}${GREEN}
-        local AT=${BOLD}${CYAN}
-        local HOST=${BOLD}${ORNG}
-        local PATH=${PLAIN}${CYAN}
-        local CURSOR=${BOLD}${ORNG}
+        local GREEN='\e[32m'
+        local CYAN='\e[96m'
+        local ORNG='\e[38;5;202m'
 
-        PS1="${debian_chroot:+($debian_chroot)}${USR}\u${AT}@${HOST}\h${PATH} \w ${CURSOR}\$${RESET} "
+        local USR="\[${BOLD}${GREEN}\]"
+        local AT="\[${BOLD}${CYAN}\]"
+        local HOST="\[${BOLD}${ORNG}\]"
+        local PATH="\[${PLAIN}${CYAN}\]"
+        local CURSOR="\[${BOLD}${ORNG}\]"
+
+PS1="${debian_chroot:+($debian_chroot)}${USR}\u${AT}@${HOST}\h${PATH} \w ${CURSOR}\$\[${PLAIN}\] "
     else
         PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
     fi
