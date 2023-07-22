@@ -2,7 +2,7 @@
 title: color bash prompt
 description: 
 published: true
-date: 2023-07-22T14:39:25.060Z
+date: 2023-07-22T14:41:49.409Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-20T20:43:26.878Z
@@ -33,7 +33,7 @@ config_color_prompt () {
         local PATH="\[${PLAIN}${CYAN}\]"
         local CURSOR="\[${BOLD}${ORNG}\]"
 
-PS1="${debian_chroot:+($debian_chroot)}${USR}\u${AT}@${HOST}\h${PATH} \w ${CURSOR}\$\[${PLAIN}\] "
+				PS1="${debian_chroot:+($debian_chroot)}${USR}\u${AT}@${HOST}\h${PATH} \w ${CURSOR}\$\[${PLAIN}\] "
     else
         PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "
     fi
