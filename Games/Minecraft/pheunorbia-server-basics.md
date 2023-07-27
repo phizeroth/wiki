@@ -2,7 +2,7 @@
 title: Pheunorbia Server Basics
 description: 
 published: true
-date: 2023-07-27T21:54:55.642Z
+date: 2023-07-27T21:55:10.765Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-27T19:05:01.677Z
@@ -44,9 +44,9 @@ screen -dmS minecraft java -Xmx2048M -Xms2048M -jar paper.jar --world phnord --n
 ### Stop server
 If the server is running in your terminal, `Ctrl-C` or entering the command `stop` will gracefully shut down the server.
 
-### Update PaperMC
-Go to https://papermc.io/downloads/paper and download the new build. Copy to `/home/mc/minecraft/pheunorbia/paper.jar`
-
 ### Back up server
 Stop the server first before backing up.
 Compress `/home/mc/minecraft/pheunorbia/*` (except `cache` directory) to `/media/phi/Hoard/backup/minecraft/pheunorbia_[YYYY-mm-dd].tar.gz`
+
+### Update PaperMC
+Go to https://papermc.io/downloads/paper and download the new build. Copy to `/home/mc/minecraft/pheunorbia/paper.jar`
