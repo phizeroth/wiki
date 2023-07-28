@@ -2,7 +2,7 @@
 title: Pheunorbia Server Basics
 description: 
 published: true
-date: 2023-07-28T03:10:27.917Z
+date: 2023-07-28T03:11:40.347Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-27T19:05:01.677Z
@@ -23,7 +23,7 @@ aka `~/pheunorbia`
 
 # Server management
 
-## Screen
+## `screen`
 Pheunorbia uses [screen](https://linuxhandbook.com/screen-command/) to cleanly run the server in a background process that can be "attached" or "detached" from any terminal window, and closing/disconnecting a terminal window will not kill the server.
 
 To **r**eattach/**r**esume the server screen:
