@@ -2,20 +2,24 @@
 title: Pheunorbia Server Basics
 description: 
 published: true
-date: 2023-07-27T21:55:10.765Z
+date: 2023-07-28T00:02:20.992Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-27T19:05:01.677Z
 ---
 
 ## Access
-To access,
+Remote shell:
 ```bash
 ssh -p 60022 mc@pheunorbia.phiz.io
 ```
+> User `mc` has no sudo access and a locked password.
+{.is-info}
 
-## Server location
-`/home/mc/minecraft/pheunorbia`
+
+### Server location
+`/home/mc/pheunorbia/`
+aka `~/pheunorbia`
 
 ## Server management
 
@@ -31,8 +35,10 @@ If it says a screen is already attached elsewhere, this means it is open in anot
 screen -dr
 ```
 
+While the server is running, the screen can be detached by the command `Ctrl A D`
+
 ### Start server
-From `/home/mc/minecraft/pheunorbia`:
+From the `~/pheunorbia` directory:
 ```bash
 ./start.sh
 ```
@@ -46,7 +52,11 @@ If the server is running in your terminal, `Ctrl-C` or entering the command `sto
 
 ### Back up server
 Stop the server first before backing up.
-Compress `/home/mc/minecraft/pheunorbia/*` (except `cache` directory) to `/media/phi/Hoard/backup/minecraft/pheunorbia_[YYYY-mm-dd].tar.gz`
+
+In `~/pheunorbia`, run the following script:
+```bash
+./backup.sh
+```
 
 ### Update PaperMC
-Go to https://papermc.io/downloads/paper and download the new build. Copy to `/home/mc/minecraft/pheunorbia/paper.jar`
+Go to https://papermc.io/downloads/paper and download the new build. Copy to `~/minecraft/pheunorbia/paper.jar`
