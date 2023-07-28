@@ -2,7 +2,7 @@
 title: Pheunorbia Server Basics
 description: 
 published: true
-date: 2023-07-28T03:11:40.347Z
+date: 2023-07-28T16:02:16.992Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-27T19:05:01.677Z
@@ -35,7 +35,9 @@ If it says a screen is already attached elsewhere, this means it is open in anot
 screen -dr
 ```
 
-While the server is running, the screen can be detached by the command `Ctrl A D`
+While the server is running, the screen can be detached by the command `Ctrl-A, D`
+
+To scroll, use `Ctrl-A, Esc` to enter copy mode, then `PgUp` and `PgDn`.
 
 ## Start server
 From the `~/pheunorbia` directory:
@@ -59,4 +61,16 @@ In `~/pheunorbia`, run the following script:
 ```
 
 ## Update PaperMC
-Go to https://papermc.io/downloads/paper and download the new build. Copy to `~/minecraft/pheunorbia/paper.jar`
+Check current and previous version:
+```bash
+cat version_history.json
+```
+> Stop the server before updating!
+{.is-warning}
+
+Check https://papermc.io/downloads/paper for the latest Paper version and build #.
+Run the update script, and enter version and build # at the prompts:
+```bash
+./update.sh
+```
+This script will `curl` the given version and build of Paper and replace the current `paper.jar` file.
