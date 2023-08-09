@@ -1,8 +1,8 @@
 ---
-title: SSH
+title: ssh
 description: 
 published: true
-date: 2023-08-09T02:24:37.973Z
+date: 2023-08-09T02:24:49.422Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-27T22:37:49.197Z
